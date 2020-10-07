@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.android_second.ueeproject.ui.gallery.GalleryFragment;
@@ -31,6 +32,7 @@ import java.util.Objects;
 public class HomeScreen extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+    private ImageView admin_cart_icons;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +49,16 @@ public class HomeScreen extends AppCompatActivity {
                 R.id.nav_gallery, R.id.nav_home,  R.id.nav_slideshow,R.id.sendFragment,R.id.shareFragment)
                 .setDrawerLayout(drawer)
                 .build();
+        admin_cart_icons=findViewById(R.id.admin_cart_icons);
+
+        admin_cart_icons.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(), CartActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);
+            }
+        });
         navigationView.setItemIconTintList(null);
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
