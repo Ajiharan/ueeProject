@@ -13,5 +13,5 @@
     <color name="brown">#B22222</color>
     <color name="pink">#FFC0CB</color>
     <color name="colorList">#FFFAF0</color>
-
+    <color name="colorDivider">#ECECEC</color>
 </resources>

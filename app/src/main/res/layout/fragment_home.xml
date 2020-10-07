@@ -115,9 +115,10 @@
 
                                 <ImageView
                                     android:id="@+id/img_product"
-                                    android:layout_width="130dp"
-                                    android:layout_height="120dp"
-                                    android:src="@drawable/food"
+                                    android:layout_width="160dp"
+                                    android:padding="10dp"
+                                    android:layout_height="150dp"
+                                    android:src="@drawable/bag1"
                                     app:layout_constraintLeft_toLeftOf="parent"
                                     app:layout_constraintRight_toRightOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
@@ -152,7 +153,7 @@
                                     android:id="@+id/txt_price"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="LKR 250.00"
+                                    android:text="LKR 150.00"
                                     android:layout_marginTop="4dp"
                                     android:textColor="@android:color/white"
                                     app:layout_constraintLeft_toLeftOf="parent"
@@ -165,7 +166,8 @@
                                     android:layout_marginTop="4dp"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Shamboo essentials"
+                                    android:text="Black Hand bag"
+                                    android:textAllCaps="true"
                                     android:textColor="@android:color/white"
                                     app:layout_constraintLeft_toLeftOf="parent"
                                     app:layout_constraintRight_toRightOf="parent"
@@ -196,9 +198,11 @@
 
                                 <ImageView
                                     android:id="@+id/img_product2"
-                                    android:layout_width="130dp"
-                                    android:layout_height="120dp"
-                                    android:src="@drawable/food"
+                                    android:layout_width="160dp"
+                                    android:layout_height="150dp"
+                                    android:padding="10dp"
+                                    android:foregroundGravity="center"
+                                    android:src="@drawable/elec3"
                                     app:layout_constraintLeft_toLeftOf="parent"
                                     app:layout_constraintRight_toRightOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
@@ -221,7 +225,7 @@
                                     android:id="@+id/txt_offerprice2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="LKR 250.00"
+                                    android:text="LKR 37550.00"
                                     android:textStyle="italic"
                                     android:layout_marginTop="4dp"
                                     android:textColor="@android:color/white"
@@ -233,7 +237,7 @@
                                     android:id="@+id/txt_price2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="LKR 250.00"
+                                    android:text="LKR 25000.00"
                                     android:layout_marginTop="4dp"
                                     android:textColor="@android:color/white"
                                     app:layout_constraintLeft_toLeftOf="parent"
@@ -246,7 +250,8 @@
                                     android:layout_marginTop="4dp"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Shamboo essentials"
+                                    android:text="LG Television"
+                                    android:textAllCaps="true"
                                     android:textColor="@android:color/white"
                                     app:layout_constraintLeft_toLeftOf="parent"
                                     app:layout_constraintRight_toRightOf="parent"
@@ -276,9 +281,10 @@
 
                                 <ImageView
                                     android:id="@+id/img_product3"
-                                    android:layout_width="130dp"
-                                    android:layout_height="120dp"
-                                    android:src="@drawable/food"
+                                    android:layout_width="160dp"
+                                    android:layout_height="150dp"
+                                    android:padding="10dp"
+                                    android:src="@drawable/elec1"
                                     app:layout_constraintLeft_toLeftOf="parent"
                                     app:layout_constraintRight_toRightOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
@@ -301,7 +307,7 @@
                                     android:id="@+id/txt_offerprice3"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="LKR 250.00"
+                                    android:text="LKR 28500.00"
                                     android:textStyle="italic"
                                     android:layout_marginTop="4dp"
                                     android:textColor="@android:color/white"
@@ -313,7 +319,7 @@
                                     android:id="@+id/txt_price3"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="LKR 250.00"
+                                    android:text="LKR 20000.00"
                                     android:layout_marginTop="4dp"
                                     android:textColor="@android:color/white"
                                     app:layout_constraintLeft_toLeftOf="parent"
@@ -326,7 +332,8 @@
                                     android:layout_marginTop="4dp"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Shamboo essentials"
+                                    android:text="Apple Desktop"
+                                    android:textAllCaps="true"
                                     android:textColor="@android:color/white"
                                     app:layout_constraintLeft_toLeftOf="parent"
                                     app:layout_constraintRight_toRightOf="parent"
@@ -408,7 +415,8 @@
                                     android:id="@+id/img_product1"
                                     android:layout_width="130dp"
                                     android:layout_height="120dp"
-                                    android:src="@drawable/food"
+                                    android:padding="10dp"
+                                    android:src="@drawable/lap2"
                                     app:layout_constraintLeft_toLeftOf="parent"
                                     app:layout_constraintRight_toRightOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
@@ -425,14 +433,14 @@
                                     android:stepSize="0.5"
                                     app:layout_constraintLeft_toLeftOf="parent"
                                     app:layout_constraintRight_toRightOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/txt_offerprice1" />
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_name1" />
+
 
                                 <TextView
-                                    android:id="@+id/txt_offerprice1"
+                                    android:id="@+id/txt_price1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="LKR 250.00"
-                                    android:textStyle="italic"
+                                    android:text="LKR 122250.00"
                                     android:layout_marginTop="4dp"
                                     android:textColor="@android:color/white"
                                     app:layout_constraintLeft_toLeftOf="parent"
@@ -440,23 +448,13 @@
                                     app:layout_constraintTop_toBottomOf="@+id/txt_name1" />
 
                                 <TextView
-                                    android:id="@+id/txt_price1"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="LKR 250.00"
-                                    android:layout_marginTop="4dp"
-                                    android:textColor="@android:color/white"
-                                    app:layout_constraintLeft_toLeftOf="parent"
-                                    app:layout_constraintRight_toRightOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/txt_offerprice1" />
-
-                                <TextView
                                     android:id="@+id/txt_name1"
                                     android:textStyle="bold"
                                     android:layout_marginTop="4dp"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Shamboo essentials"
+                                    android:text="Dell Laptop"
+                                    android:textAllCaps="true"
                                     android:textColor="@android:color/white"
                                     app:layout_constraintLeft_toLeftOf="parent"
                                     app:layout_constraintRight_toRightOf="parent"
@@ -489,7 +487,8 @@
                                     android:id="@+id/img_product21"
                                     android:layout_width="130dp"
                                     android:layout_height="120dp"
-                                    android:src="@drawable/food"
+                                    android:padding="10dp"
+                                    android:src="@drawable/lap3"
                                     app:layout_constraintLeft_toLeftOf="parent"
                                     app:layout_constraintRight_toRightOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
@@ -506,14 +505,14 @@
                                     android:stepSize="0.5"
                                     app:layout_constraintLeft_toLeftOf="parent"
                                     app:layout_constraintRight_toRightOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/txt_offerprice21" />
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_name21" />
+                               />
 
                                 <TextView
-                                    android:id="@+id/txt_offerprice21"
+                                    android:id="@+id/txt_price21"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="LKR 250.00"
-                                    android:textStyle="italic"
+                                    android:text="LKR 225000.00"
                                     android:layout_marginTop="4dp"
                                     android:textColor="@android:color/white"
                                     app:layout_constraintLeft_toLeftOf="parent"
@@ -521,23 +520,13 @@
                                     app:layout_constraintTop_toBottomOf="@+id/txt_name21" />
 
                                 <TextView
-                                    android:id="@+id/txt_price21"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="LKR 250.00"
-                                    android:layout_marginTop="4dp"
-                                    android:textColor="@android:color/white"
-                                    app:layout_constraintLeft_toLeftOf="parent"
-                                    app:layout_constraintRight_toRightOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/txt_offerprice21" />
-
-                                <TextView
                                     android:id="@+id/txt_name21"
                                     android:textStyle="bold"
+                                    android:textAllCaps="true"
                                     android:layout_marginTop="4dp"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Shamboo essentials"
+                                    android:text="Gaming Laptop"
                                     android:textColor="@android:color/white"
                                     app:layout_constraintLeft_toLeftOf="parent"
                                     app:layout_constraintRight_toRightOf="parent"
@@ -569,7 +558,8 @@
                                     android:id="@+id/img_product31"
                                     android:layout_width="130dp"
                                     android:layout_height="120dp"
-                                    android:src="@drawable/food"
+                                    android:padding="10dp"
+                                    android:src="@drawable/lap4"
                                     app:layout_constraintLeft_toLeftOf="parent"
                                     app:layout_constraintRight_toRightOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
@@ -586,14 +576,15 @@
                                     android:stepSize="0.5"
                                     app:layout_constraintLeft_toLeftOf="parent"
                                     app:layout_constraintRight_toRightOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/txt_offerprice31" />
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_name31" />
+
+
 
                                 <TextView
-                                    android:id="@+id/txt_offerprice31"
+                                    android:id="@+id/txt_price31"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="LKR 250.00"
-                                    android:textStyle="italic"
+                                    android:text="LKR 75500.00"
                                     android:layout_marginTop="4dp"
                                     android:textColor="@android:color/white"
                                     app:layout_constraintLeft_toLeftOf="parent"
@@ -601,23 +592,13 @@
                                     app:layout_constraintTop_toBottomOf="@+id/txt_name31" />
 
                                 <TextView
-                                    android:id="@+id/txt_price31"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="LKR 250.00"
-                                    android:layout_marginTop="4dp"
-                                    android:textColor="@android:color/white"
-                                    app:layout_constraintLeft_toLeftOf="parent"
-                                    app:layout_constraintRight_toRightOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/txt_offerprice31" />
-
-                                <TextView
                                     android:id="@+id/txt_name31"
                                     android:textStyle="bold"
                                     android:layout_marginTop="4dp"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Shamboo essentials"
+                                    android:text="Samsung Desktop"
+                                    android:textAllCaps="true"
                                     android:textColor="@android:color/white"
                                     app:layout_constraintLeft_toLeftOf="parent"
                                     app:layout_constraintRight_toRightOf="parent"
