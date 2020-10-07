@@ -22,4 +22,19 @@
         android:name="com.android_second.ueeproject.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <activity
+        android:id="@+id/viewProduct"
+        android:name="com.android_second.ueeproject.ViewProduct"
+        android:label="activity_view_product"
+        tools:layout="@layout/activity_view_product" />
+    <fragment
+        android:id="@+id/sendFragment"
+        android:name="com.android_second.ueeproject.ui.send.SendFragment"
+        android:label="send_fragment"
+        tools:layout="@layout/send_fragment" />
+    <fragment
+        android:id="@+id/shareFragment"
+        android:name="com.android_second.ueeproject.ui.share.ShareFragment"
+        android:label="share_fragment"
+        tools:layout="@layout/share_fragment" />
 </navigation>
