@@ -54,7 +54,7 @@
                 android:id="@+id/cart_details2"
                 app:layout_constraintTop_toBottomOf="@+id/cons_header"
                 android:layout_width="match_parent"
-                android:layout_height="100dp">
+                android:layout_height="490dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -63,58 +63,277 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_vertical"
-                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
                         android:orientation="horizontal"
                         >
-                        <TextView
-                            android:layout_marginStart="50dp"
-                            android:layout_width="wrap_content"
-                            android:text="Delivery"
-                            android:layout_height="wrap_content"/>
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
                             <TextView
-                                android:layout_marginStart="50dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="3dp"
                                 android:layout_width="wrap_content"
-                                android:text="Northern Jaffna"
+                                android:text="@string/customer_28_june_2020"
                                 android:layout_height="wrap_content"/>
                             <TextView
-                                android:layout_marginStart="50dp"
+                                android:layout_marginStart="10dp"
                                 android:layout_width="wrap_content"
-                                android:text="Home Delivery 9 to 10days"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/this_product_is_so_great"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_marginStart="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/thank_you_so_much"
                                 android:layout_height="wrap_content"/>
                         </LinearLayout>
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:layout_height="wrap_content"
+                            android:rating="4"
+                            android:layout_marginVertical="0dp"
+                            android:layout_marginHorizontal="0dp"
+                            android:scaleX="0.42"
+                            android:scaleY="0.42"
+                            android:progressTint="@android:color/holo_orange_light"
+                            android:progressBackgroundTint="@android:color/holo_orange_light"
+                            android:stepSize="0.6"
+                            />
+
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_vertical"
-                        android:gravity="center"
                         android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
                         android:orientation="horizontal"
                         >
-                        <TextView
-                            android:layout_marginStart="20dp"
-                            android:layout_width="wrap_content"
-                            android:text="Delivery"
-                            android:layout_height="wrap_content"/>
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
                             <TextView
-                                android:layout_marginStart="50dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="3dp"
                                 android:layout_width="wrap_content"
-                                android:text="7 Days Return"
+                                android:text="@string/customer_28_june_2020"
                                 android:layout_height="wrap_content"/>
                             <TextView
-                                android:layout_marginStart="50dp"
+                                android:layout_marginStart="10dp"
                                 android:layout_width="wrap_content"
-                                android:text="Warranty not available"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/this_product_is_so_great"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_marginStart="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/thank_you_so_much"
                                 android:layout_height="wrap_content"/>
                         </LinearLayout>
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:layout_height="wrap_content"
+                            android:rating="4"
+                            android:layout_marginVertical="0dp"
+                            android:layout_marginHorizontal="0dp"
+                            android:scaleX="0.42"
+                            android:scaleY="0.42"
+                            android:progressTint="@android:color/holo_orange_light"
+                            android:progressBackgroundTint="@android:color/holo_orange_light"
+                            android:stepSize="0.6"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_width="wrap_content"
+                                android:text="@string/customer_28_june_2020"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_marginStart="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/this_product_is_so_great"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_marginStart="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/thank_you_so_much"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:layout_height="wrap_content"
+                            android:rating="4"
+                            android:layout_marginVertical="0dp"
+                            android:layout_marginHorizontal="0dp"
+                            android:scaleX="0.42"
+                            android:scaleY="0.42"
+                            android:progressTint="@android:color/holo_orange_light"
+                            android:progressBackgroundTint="@android:color/holo_orange_light"
+                            android:stepSize="0.6"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_width="wrap_content"
+                                android:text="@string/customer_28_june_2020"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_marginStart="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/this_product_is_so_great"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_marginStart="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/thank_you_so_much"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:layout_height="wrap_content"
+                            android:rating="4"
+                            android:layout_marginVertical="0dp"
+                            android:layout_marginHorizontal="0dp"
+                            android:scaleX="0.42"
+                            android:scaleY="0.42"
+                            android:progressTint="@android:color/holo_orange_light"
+                            android:progressBackgroundTint="@android:color/holo_orange_light"
+                            android:stepSize="0.6"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_width="wrap_content"
+                                android:text="@string/customer_28_june_2020"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_marginStart="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/this_product_is_so_great"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_marginStart="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/thank_you_so_much"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:layout_height="wrap_content"
+                            android:rating="4"
+                            android:layout_marginVertical="0dp"
+                            android:layout_marginHorizontal="0dp"
+                            android:scaleX="0.42"
+                            android:scaleY="0.42"
+                            android:progressTint="@android:color/holo_orange_light"
+                            android:progressBackgroundTint="@android:color/holo_orange_light"
+                            android:stepSize="0.6"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_width="wrap_content"
+                                android:text="@string/customer_28_june_2020"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_marginStart="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/this_product_is_so_great"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_marginStart="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/thank_you_so_much"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:layout_height="wrap_content"
+                            android:rating="4"
+                            android:layout_marginVertical="0dp"
+                            android:layout_marginHorizontal="0dp"
+                            android:scaleX="0.42"
+                            android:scaleY="0.42"
+                            android:progressTint="@android:color/holo_orange_light"
+                            android:progressBackgroundTint="@android:color/holo_orange_light"
+                            android:stepSize="0.6"
+                            />
+
                     </LinearLayout>
                 </LinearLayout>
 
@@ -127,6 +346,73 @@
                 android:padding="5dp"
                 android:id="@+id/cart_details3"
                 app:layout_constraintTop_toBottomOf="@+id/cart_details2"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="60dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_83"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/positive_seller"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rating"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_85"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ship_a_time"/>
+
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:background="@color/colorDivider"
+                        android:text="Follow"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:textSize="14sp"
+                        style="@style/CardView"
+                        android:textAllCaps="true"
+                        android:layout_height="35dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="15dp"
+                android:padding="5dp"
+                android:id="@+id/cart_details5"
+                app:layout_constraintTop_toBottomOf="@+id/cart_details3"
                 android:layout_width="match_parent"
                 android:layout_marginBottom="20dp"
                 android:layout_height="60dp">
