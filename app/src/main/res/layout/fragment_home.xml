@@ -106,6 +106,7 @@
                         android:orientation="vertical" >
                         <androidx.cardview.widget.CardView
                             android:layout_width="wrap_content"
+                            android:id="@+id/cart_click"
                             app:cardBackgroundColor="@color/colorAccent"
                             app:cardCornerRadius="8dp"
                             android:layout_height="wrap_content">

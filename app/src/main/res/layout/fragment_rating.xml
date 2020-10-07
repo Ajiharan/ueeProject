@@ -3,12 +3,169 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".RatingFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
+        android:id="@+id/overview_scroll"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/overview_cons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cons_header"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt_rate"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_width="wrap_content"
+                    android:text="@string/rating_and_review_5"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:textAllCaps="true"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/txt_viewall"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginEnd="20dp"
+                    android:layout_width="wrap_content"
+                    android:textAllCaps="true"
+                    android:text="@string/view_all"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="15dp"
+                android:padding="5dp"
+                android:id="@+id/cart_details2"
+                app:layout_constraintTop_toBottomOf="@+id/cons_header"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_marginStart="50dp"
+                            android:layout_width="wrap_content"
+                            android:text="Delivery"
+                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_marginStart="50dp"
+                                android:layout_width="wrap_content"
+                                android:text="Northern Jaffna"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_marginStart="50dp"
+                                android:layout_width="wrap_content"
+                                android:text="Home Delivery 9 to 10days"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_marginStart="20dp"
+                            android:layout_width="wrap_content"
+                            android:text="Delivery"
+                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_marginStart="50dp"
+                                android:layout_width="wrap_content"
+                                android:text="7 Days Return"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_marginStart="50dp"
+                                android:layout_width="wrap_content"
+                                android:text="Warranty not available"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="15dp"
+                android:padding="5dp"
+                android:id="@+id/cart_details3"
+                app:layout_constraintTop_toBottomOf="@+id/cart_details2"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="60dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/user_home_black"
+                        />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:background="@color/colorDivider"
+                        android:text="@string/add_to_wishlist"
+                        style="@style/CardView"
+                        android:textAllCaps="true"
+                        android:layout_height="35dp"/>
+                    <Button
+                        android:layout_marginStart="20dp"
+                        android:layout_width="wrap_content"
+                        style="@style/CardView"
+                        android:textAllCaps="true"
+                        android:background="@color/colorDivider"
+                        android:text="@string/add_to_cart"
+                        android:layout_height="35dp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
 </FrameLayout>

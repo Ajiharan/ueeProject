@@ -5,7 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.google.android.material.badge.BadgeDrawable;
 import com.google.android.material.tabs.TabLayout;
@@ -16,6 +19,7 @@ import java.util.Objects;
 public class ViewProduct extends AppCompatActivity {
     private ViewPager2 viewPager2;
     private TabLayout tabLayout;
+    private ImageView img_arrow;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +28,15 @@ public class ViewProduct extends AppCompatActivity {
         viewPager2=findViewById(R.id.view_pager);
         viewPager2.setAdapter(new ProductPageAdapter(this));
         tabLayout=findViewById(R.id.tabLayout);
+        img_arrow=findViewById(R.id.img_arrow);
+        img_arrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(), HomeScreen.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);
+            }
+        });
         TabLayoutMediator tabLayoutMediator=new TabLayoutMediator(tabLayout, viewPager2, new TabLayoutMediator.TabConfigurationStrategy() {
             @Override
             public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
@@ -34,10 +47,9 @@ public class ViewProduct extends AppCompatActivity {
                         BadgeDrawable badgeDrawable = tab.getOrCreateBadge();
                         badgeDrawable.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.colorAccent));
                         badgeDrawable.setVisible(true);
-
                         break;
                     }
-                    case 2: {
+                    case 1: {
                         tab.setText("Rating");
                         tab.setIcon(R.drawable.user_rating_black);
                         BadgeDrawable badgeDrawable = tab.getOrCreateBadge();
@@ -47,7 +59,7 @@ public class ViewProduct extends AppCompatActivity {
                         badgeDrawable.setMaxCharacterCount(3);
                         break;
                     }
-                    case 1: {
+                    case 2: {
                         tab.setText("Product Details");
                         tab.setIcon(R.drawable.user_product_overview_black);
                         BadgeDrawable badgeDrawable = tab.getOrCreateBadge();

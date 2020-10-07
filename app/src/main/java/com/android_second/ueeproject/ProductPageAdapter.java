@@ -21,11 +21,12 @@ public class ProductPageAdapter  extends FragmentStateAdapter {
                 return  new OverviewFragment();
 
             case  1:
-                return  new ProductsDetailsFragment();
-
-            default:
                 return new RatingFragment();
 
+
+            default:
+
+                return  new ProductsDetailsFragment();
         }
     }
 

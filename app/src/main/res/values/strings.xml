@@ -15,4 +15,14 @@
     <string name="shamboo">Shamboo</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_to_wishlist">Add to Wishlist</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="specification_brand_sku">Specification Brand sku</string>
+    <string name="black_bag">Black Bag</string>
+    <string name="lkr250_00">LKR250.00</string>
+    <string name="rating_and_review_5">rating and review(5)</string>
+    <string name="view_all">view all</string>
+    <string name="_7_days_return">7 Days Return</string>
+    <string name="delivery">Delivery</string>
+    <string name="warranty_not_available">Warranty not available</string>
 </resources>
