@@ -391,14 +391,15 @@
                             android:text="@string/ship_a_time"/>
 
                     </LinearLayout>
-                    <Button
+                    <android.widget.Button
                         android:layout_width="wrap_content"
-                        android:background="@color/colorDivider"
-                        android:text="Follow"
+                        android:background="@drawable/btn_redbackground"
+                        android:text="@string/follow"
                         android:layout_marginStart="20dp"
+                        android:textColor="@android:color/white"
                         android:layout_marginEnd="20dp"
                         android:textSize="14sp"
-                        style="@style/CardView"
+
                         android:textAllCaps="true"
                         android:layout_height="35dp"/>
 
@@ -432,19 +433,21 @@
                         android:layout_marginStart="10dp"
                         android:src="@drawable/user_home_black"
                         />
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:background="@color/colorDivider"
+                    <android.widget.Button
+                        android:layout_width="140dp"
+                        android:background="@drawable/btnbackground"
+                        android:textColor="@android:color/white"
                         android:text="@string/add_to_wishlist"
                         style="@style/CardView"
                         android:textAllCaps="true"
                         android:layout_height="35dp"/>
-                    <Button
+                    <android.widget.Button
                         android:layout_marginStart="20dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="120dp"
                         style="@style/CardView"
                         android:textAllCaps="true"
-                        android:background="@color/colorDivider"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/btnbackground"
                         android:text="@string/add_to_cart"
                         android:layout_height="35dp"/>
                 </LinearLayout>

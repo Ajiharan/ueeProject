@@ -44,7 +44,7 @@ public class HomeScreen extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_gallery, R.id.nav_home,R.id.viewProduct,  R.id.nav_slideshow,R.id.sendFragment,R.id.shareFragment)
+                R.id.nav_gallery, R.id.nav_home,  R.id.nav_slideshow,R.id.sendFragment,R.id.shareFragment)
                 .setDrawerLayout(drawer)
                 .build();
         navigationView.setItemIconTintList(null);
