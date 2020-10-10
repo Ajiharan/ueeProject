@@ -685,6 +685,7 @@
                        android:textSize="14sp"
                        />
                     <android.widget.Button
+                        android:id="@+id/btnProceed"
                         android:layout_marginStart="20dp"
                         android:layout_width="180dp"
                         style="@style/CardView"

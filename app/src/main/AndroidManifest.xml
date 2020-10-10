@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".OrderedProductList"></activity>
+        <activity android:name=".Payment"></activity>
         <activity android:name=".CartActivity" />
         <activity
             android:name=".ViewProduct"
