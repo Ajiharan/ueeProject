@@ -36,4 +36,10 @@
     <string name="content_is_not_available">Content is not available</string>
     <string name="follow">Follow</string>
     <string name="similar_products">Similar products</string>
+    <string name="title_activity_faq">faq</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
 </resources>

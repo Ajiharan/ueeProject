@@ -33,4 +33,10 @@
         android:name="com.android_second.ueeproject.ui.share.ShareFragment"
         android:label="share_fragment"
         tools:layout="@layout/share_fragment" />
+    <fragment
+        android:id="@+id/fragmentFaq"
+        android:name="com.android_second.ueeproject.faq"
+        android:label="faq"
+        tools:layout="@layout/fragment_faq"/>
+
 </navigation>

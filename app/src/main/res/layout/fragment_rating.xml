@@ -417,39 +417,40 @@
                 android:layout_width="match_parent"
                 android:layout_marginBottom="20dp"
                 android:layout_height="60dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_vertical"
                     android:gravity="center"
-                    android:orientation="horizontal"
-                    >
+                    android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_gravity="center_vertical"
                         android:layout_width="20dp"
-                        android:layout_marginEnd="10dp"
                         android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
                         android:layout_marginStart="10dp"
-                        android:src="@drawable/user_home_black"
-                        />
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/user_home_black" />
+
                     <android.widget.Button
+                        style="@style/CardView"
                         android:layout_width="140dp"
+                        android:layout_height="35dp"
                         android:background="@drawable/btnbackground"
-                        android:textColor="@android:color/white"
                         android:text="@string/add_to_wishlist"
-                        style="@style/CardView"
                         android:textAllCaps="true"
-                        android:layout_height="35dp"/>
+                        android:textColor="@android:color/white" />
+
                     <android.widget.Button
-                        android:layout_marginStart="20dp"
-                        android:layout_width="120dp"
                         style="@style/CardView"
-                        android:textAllCaps="true"
-                        android:textColor="@android:color/white"
+                        android:layout_width="120dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="20dp"
                         android:background="@drawable/btnbackground"
                         android:text="@string/add_to_cart"
-                        android:layout_height="35dp"/>
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
