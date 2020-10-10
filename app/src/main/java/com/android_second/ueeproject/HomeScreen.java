@@ -46,7 +46,7 @@ public class HomeScreen extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_gallery, R.id.nav_home,  R.id.nav_slideshow,R.id.sendFragment,R.id.shareFragment)
+                R.id.nav_gallery, R.id.nav_home,  R.id.nav_slideshow,R.id.sendFragment,R.id.shareFragment,R.id.fragmentFaq)
                 .setDrawerLayout(drawer)
                 .build();
         admin_cart_icons=findViewById(R.id.admin_cart_icons);
@@ -64,20 +64,6 @@ public class HomeScreen extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
         Objects.requireNonNull(getSupportActionBar()).setBackgroundDrawable(new ColorDrawable(getColor(R.color.colorPrimaryDark)));
-//        navController.addOnDestinationChangedListener(new NavController.OnDestinationChangedListener() {
-//            @Override
-//            public void onDestinationChanged(@NonNull NavController controller, @NonNull NavDestination destination, @Nullable Bundle arguments) {
-//                int id=destination.getId();
-//                switch(id){
-//                    case R.id.nav_home:
-//
-//                        break;
-//                    case R.id.nav_slideshow:
-//                            getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getColor(R.color.colorPrimaryDark)));
-//                            break;
-//                }
-//            }
-//        });
 
         navigationView.bringToFront();
 
