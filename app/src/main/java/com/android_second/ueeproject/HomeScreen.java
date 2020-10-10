@@ -33,6 +33,7 @@ public class HomeScreen extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ImageView admin_cart_icons;
+    private ImageView notification_icon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +60,17 @@ public class HomeScreen extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        notification_icon = findViewById(R.id.notification_icon);
+
+        notification_icon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(HomeScreen.this,View_Notification.class);
+                startActivity(intent);
+            }
+        });
+
         navigationView.setItemIconTintList(null);
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
