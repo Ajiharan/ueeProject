@@ -37,6 +37,7 @@
     <string name="follow">Follow</string>
     <string name="similar_products">Similar products</string>
     <string name="title_activity_faq">faq</string>
+    <string name="how_to_reset_password">How to reset password</string>
     <!--
     This string is used for square devices and overridden by hello_world in
     values-round/strings.xml for round devices.
