@@ -30,7 +30,8 @@
                     android:layout_marginBottom="10dp"
                     android:layout_toStartOf="@+id/admin_cart_icons"
                     android:src="@drawable/ic_user_serch_icon1"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    app:tint="@android:color/white" />
 
 
                 <ImageView
@@ -74,7 +75,7 @@
                     android:layout_marginBottom="3dp"
                     android:layout_toStartOf="@+id/admin_cart_icons"
                     android:ems="10"
-                    android:hint="Search Product"
+                    android:hint="@string/search_product"
                     android:inputType="textPersonName"
                     android:textColor="@android:color/white" />
             </RelativeLayout>

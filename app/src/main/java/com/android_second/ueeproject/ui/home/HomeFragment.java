@@ -40,7 +40,7 @@ public class HomeFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        int sliders[]={R.drawable.slider,R.drawable.slider2,R.drawable.slider3,R.drawable.slider4};
+        int sliders[]={R.drawable.ban5,R.drawable.ban9,R.drawable.ban10,R.drawable.slider4};
         for(int slide:sliders){
             bannerFlipper(slide);
         }

@@ -233,7 +233,7 @@
                             <ImageView
                                 android:layout_width="70dp"
                                 android:layout_height="70dp"
-                                android:src="@drawable/elec3"
+                                android:src="@drawable/bag1"
                                 />
                         </LinearLayout>
                         <LinearLayout
@@ -316,7 +316,7 @@
                             <ImageView
                                 android:layout_width="70dp"
                                 android:layout_height="70dp"
-                                android:src="@drawable/elec3"
+                                android:src="@drawable/lap3"
                                 />
                         </LinearLayout>
                         <LinearLayout
@@ -455,7 +455,7 @@
                                             android:layout_width="135dp"
                                             android:layout_height="108dp"
                                             android:padding="10dp"
-                                            android:src="@drawable/elec3"
+                                            android:src="@drawable/lap2"
                                             app:layout_constraintLeft_toLeftOf="parent"
                                             app:layout_constraintRight_toRightOf="parent"
                                             app:layout_constraintTop_toTopOf="parent" />
@@ -527,7 +527,7 @@
                                             android:layout_width="130dp"
                                             android:layout_height="120dp"
                                             android:padding="10dp"
-                                            android:src="@drawable/elec3"
+                                            android:src="@drawable/bag2"
                                             app:layout_constraintLeft_toLeftOf="parent"
                                             app:layout_constraintRight_toRightOf="parent"
                                             app:layout_constraintTop_toTopOf="parent" />

@@ -58,4 +58,5 @@
     <string name="google">Login with Google Account!</string>
     <string name="email">E-Mail</string>
     <string name="forget">Enter Your E-mail here. We will send a link to your E-mail to reset your password !</string>
+    <string name="search_product">Search Product</string>
 </resources>
