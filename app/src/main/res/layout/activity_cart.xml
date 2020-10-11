@@ -48,14 +48,14 @@
     <ScrollView
         android:id="@+id/overview_scroll"
         app:layout_constraintTop_toBottomOf="@+id/topHeaders"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="70dp"
         android:layout_width="match_parent"
         android:fillViewport="true"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/overview_cons1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cons_header"
                 app:layout_constraintTop_toTopOf="parent"
@@ -150,7 +150,7 @@
                          <ImageView
                              android:layout_width="70dp"
                              android:layout_height="70dp"
-                             android:src="@drawable/lap3"
+                             android:src="@drawable/elec3"
                              />
                         </LinearLayout>
                         <LinearLayout
@@ -233,7 +233,7 @@
                             <ImageView
                                 android:layout_width="70dp"
                                 android:layout_height="70dp"
-                                android:src="@drawable/lap3"
+                                android:src="@drawable/elec3"
                                 />
                         </LinearLayout>
                         <LinearLayout
@@ -316,7 +316,7 @@
                             <ImageView
                                 android:layout_width="70dp"
                                 android:layout_height="70dp"
-                                android:src="@drawable/lap3"
+                                android:src="@drawable/elec3"
                                 />
                         </LinearLayout>
                         <LinearLayout
@@ -420,7 +420,7 @@
                         app:layout_constraintTop_toBottomOf="@+id/linear_viewStyle2"
                         android:id="@+id/offers_scroll11"
                         android:layout_width="match_parent"
-                        android:layout_height="320dp"
+                        android:layout_height="250dp"
                         android:layout_alignParentTop="true"
                         android:fillViewport="true"
                         android:measureAllChildren="false"
@@ -452,10 +452,10 @@
 
                                         <ImageView
                                             android:id="@+id/img_product1"
-                                            android:layout_width="130dp"
-                                            android:layout_height="120dp"
+                                            android:layout_width="135dp"
+                                            android:layout_height="108dp"
                                             android:padding="10dp"
-                                            android:src="@drawable/lap2"
+                                            android:src="@drawable/elec3"
                                             app:layout_constraintLeft_toLeftOf="parent"
                                             app:layout_constraintRight_toRightOf="parent"
                                             app:layout_constraintTop_toTopOf="parent" />
@@ -527,7 +527,7 @@
                                             android:layout_width="130dp"
                                             android:layout_height="120dp"
                                             android:padding="10dp"
-                                            android:src="@drawable/lap3"
+                                            android:src="@drawable/elec3"
                                             app:layout_constraintLeft_toLeftOf="parent"
                                             app:layout_constraintRight_toRightOf="parent"
                                             app:layout_constraintTop_toTopOf="parent" />
@@ -598,7 +598,7 @@
                                             android:layout_width="130dp"
                                             android:layout_height="120dp"
                                             android:padding="10dp"
-                                            android:src="@drawable/lap4"
+                                            android:src="@drawable/elec3"
                                             app:layout_constraintLeft_toLeftOf="parent"
                                             app:layout_constraintRight_toRightOf="parent"
                                             app:layout_constraintTop_toTopOf="parent" />
@@ -654,50 +654,55 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.cardview.widget.CardView
-
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="15dp"
-                android:padding="5dp"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
                 android:id="@+id/cart_details6"
                 app:layout_constraintTop_toBottomOf="@+id/overview_cons3"
-                android:layout_width="match_parent"
-                android:layout_marginBottom="20dp"
-                android:layout_height="80dp">
-                <LinearLayout
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="15dp"
+                    android:padding="5dp"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center_vertical"
-                    android:padding="10dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    >
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="80dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        >
 
-                    <RadioButton
-                        android:layout_width="60dp"
-                        android:layout_height="wrap_content"/>
-                   <TextView
-                       android:layout_width="80dp"
-                       android:layout_height="wrap_content"
-                       android:text="All"
-                       android:textAllCaps="true"
-                       android:textSize="14sp"
-                       />
-                    <android.widget.Button
-                        android:id="@+id/btnProceed"
-                        android:layout_marginStart="20dp"
-                        android:layout_width="180dp"
-                        style="@style/CardView"
-                        android:textSize="14sp"
-                        android:textAllCaps="true"
-                        android:textColor="@android:color/white"
-                        android:background="@drawable/btnbackground"
-                        android:text="Proceed To Check Out"
-                        android:layout_height="34dp"/>
-                </LinearLayout>
+                        <RadioButton
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:text="All"
+                            android:textAllCaps="true"
+                            android:textSize="14sp"
+                            />
+                        <android.widget.Button
+                            android:id="@+id/btnProceed"
+                            android:layout_marginStart="20dp"
+                            android:layout_width="180dp"
+                            style="@style/CardView"
+                            android:textSize="14sp"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/btnbackground"
+                            android:text="Proceed To Check Out"
+                            android:layout_height="34dp"/>
+                    </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
