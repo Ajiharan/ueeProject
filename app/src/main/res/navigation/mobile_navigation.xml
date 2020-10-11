@@ -16,6 +16,12 @@
         android:label="User Profile"
         tools:layout="@layout/activity_userprofile2"/>
 
+    <activity
+        android:id="@+id/nav_orders"
+        android:name="com.android_second.ueeproject.ViewOrders"
+        android:label="My Orders"
+        tools:layout="@layout/activity_view_orders"/>
+
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.android_second.ueeproject.ui.gallery.GalleryFragment"
