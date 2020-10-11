@@ -33,169 +33,346 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
-        android:layout_width="403dp"
-        android:layout_height="118dp"
-        android:layout_marginTop="100dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp">
-
-        <ImageView
-            android:layout_width="62dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="20dp"
-            android:src="@drawable/user_icon_location"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="match_parent"
+        android:layout_height="1000dp">
 
         <LinearLayout
-            android:layout_width="244dp"
-            android:layout_height="wrap_content"
-            android:clickable="true"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="226dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="3dp"
-                android:text="Nirogini" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="3dp"
-                android:text="29/2,1st lane,Oldpak road,Jaffna." />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="3dp"
-                android:text="Nothern,LK,40000" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="3dp"
-                android:text="+94778068873" />
-
-        </LinearLayout>
-
-        <android.widget.Button
-            style="@style/CardView"
-            android:layout_width="82dp"
-            android:layout_height="33dp"
-            android:layout_marginTop="50dp"
-            android:background="@color/spots_dialog_color"
-            android:text="Change"
-            android:textAllCaps="true"
-            android:textColor="@android:color/white"
+            android:layout_width="403dp"
+            android:layout_height="118dp"
+            android:layout_marginTop="100dp"
+            app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="123dp"
-            tools:layout_editor_absoluteY="677dp" />
+            tools:layout_editor_absoluteX="0dp">
 
-    </LinearLayout>
+            <ImageView
+                android:layout_width="62dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/user_icon_location"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <include
-        layout="@layout/activity_ordered_product_list"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+            <LinearLayout
+                android:layout_width="158dp"
+                android:layout_height="90dp"
+                android:clickable="true"
+                android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="434dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="480dp"
-        android:background="@color/pink"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp">
+                <TextView
+                    android:layout_width="193dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Nirogini" />
 
-        <LinearLayout
-            android:layout_width="384dp"
-            android:layout_height="match_parent"
-            android:clickable="false"
-            android:gravity="center_vertical"
-            android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:text="29/2,1st lane,Oldpak road,Jaffna." />
 
-            <TextView
-                android:layout_width="294dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="Total Shipping fee :75.88LKR"
-                android:textColor="@color/colorAccent"
-                android:textSize="20dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Nothern,LK,40000" />
 
-            <TextView
-                android:layout_width="297dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="Total Amount : 845.88LKR"
-                android:textColor="@color/colorAccent"
-                android:textSize="20dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:text="+94778068873" />
 
-        </LinearLayout>
+            </LinearLayout>
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="434dp"
-        android:layout_height="115dp"
-        android:layout_marginTop="580dp"
-        android:background="@color/colorList"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp">
-
-        <ImageView
-            android:layout_width="62dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="20dp"
-            android:src="@drawable/payment"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <LinearLayout
-            android:layout_width="244dp"
-            android:layout_height="wrap_content"
-            android:clickable="true"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="226dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="3dp"
-                android:text="Select payment method" />
-
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Add Card"></RadioButton>
-
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Cash on delivery"></RadioButton>
+            <android.widget.Button
+                android:id="@+id/button_change_address"
+                style="@style/CardView"
+                android:layout_width="82dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/spots_dialog_color"
+                android:text="Change"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="123dp"
+                tools:layout_editor_absoluteY="677dp"/>
 
         </LinearLayout>
-    </LinearLayout>
 
-    <android.widget.Button
-        style="@style/CardView"
-        android:layout_width="161dp"
-        android:layout_height="33dp"
-        android:background="@color/spots_dialog_color"
-        android:text="Place Order"
-        android:textAllCaps="true"
-        android:textColor="@android:color/white"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="716dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/overview_cons"
+                android:layout_width="match_parent"
+                android:layout_height="800dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cart_details2"
+                    android:layout_width="304dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginEnd="27dp"
+                    android:padding="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorProfile"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="74dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="20dp"
+                                android:src="@drawable/bag1"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <LinearLayout
+                                android:layout_width="141dp"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="3dp"
+                                    android:text="230.00LKR" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="3dp"
+                                    android:text="Shipping > 25.08KRR" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="3dp"
+                                    android:text="Total : 255.08LKR"
+                                    android:textColor="@color/brown" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="38dp"
+                                android:layout_height="62dp"
+                                android:layout_marginStart="20dp"
+                                android:src="@drawable/user_icon_delete"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="67dp"
+                                android:layout_marginStart="20dp"
+                                android:src="@drawable/lap2"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <LinearLayout
+                                android:layout_width="144dp"
+                                android:layout_height="76dp"
+                                android:clickable="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="3dp"
+                                    android:text="540.00LKR" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="3dp"
+                                    android:text="Shipping > 50.80KRR" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="3dp"
+                                    android:text="Total : 590.80LKR"
+                                    android:textColor="@color/brown" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="39dp"
+                                android:layout_height="56dp"
+                                android:layout_marginStart="20dp"
+                                android:src="@drawable/user_icon_delete"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cart_details3"
+                    android:layout_width="300dp"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="410dp"
+                    android:layout_marginEnd="27dp"
+                    android:padding="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints"
+                    android:layout_height="50dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorProfile"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="336dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="268dp"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="197dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Shipping : 25.08KRR" />
+
+                                <TextView
+                                    android:layout_width="222dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Amount to Pay : 230.00LKR" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cart_details4"
+                    android:layout_width="365dp"
+                    android:layout_height="75dp"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="480dp"
+                    android:layout_marginEnd="27dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="62dp"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="62dp"
+                                    android:layout_height="70dp"
+                                    android:src="@drawable/payment"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </LinearLayout>
+
+                            <RadioButton
+                                android:layout_width="151dp"
+                                android:layout_height="19dp"
+                                android:text="Add Card" />
+
+                            <RadioButton
+                                android:layout_width="182dp"
+                                android:layout_height="21dp"
+                                android:text="Cash On Delivery" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <android.widget.Button
+                    android:id="@+id/button_place_order"
+                    style="@style/CardView"
+                    android:layout_width="150dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginEnd="130dp"
+                    android:layout_marginBottom="180dp"
+                    android:background="@color/spots_dialog_color"
+                    android:text="Place order"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
