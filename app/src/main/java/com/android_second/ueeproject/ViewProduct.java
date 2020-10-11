@@ -20,11 +20,21 @@ public class ViewProduct extends AppCompatActivity {
     private ViewPager2 viewPager2;
     private TabLayout tabLayout;
     private ImageView img_arrow;
+    private ImageView cart_icon;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_product);
 //        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+        cart_icon=findViewById(R.id.img_cart);
+        cart_icon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(), CartActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);
+            }
+        });
         viewPager2=findViewById(R.id.view_pager);
         viewPager2.setAdapter(new ProductPageAdapter(this));
         tabLayout=findViewById(R.id.tabLayout);
