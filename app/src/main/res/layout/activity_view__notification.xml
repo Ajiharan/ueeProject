@@ -12,7 +12,7 @@
         android:background="@color/colorAccent"
         android:layout_height="50dp">
         <ImageView
-            android:id="@+id/img_arrow1"
+            android:id="@+id/img_arrow"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             android:src="@drawable/back_left_icon"

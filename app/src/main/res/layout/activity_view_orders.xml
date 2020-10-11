@@ -106,7 +106,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="10dp"
                                     android:layout_marginTop="3dp"
-                                    android:text="Order Date : 23/10/2019" />
+                                    android:text="Order Date : 23/05/2019" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -377,10 +377,10 @@
 
             <EditText
                 android:id="@+id/user_search_products"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="39dp"
-                android:layout_marginTop="95dp"
+                android:layout_width="212dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="76dp"
                 android:ems="10"
                 android:hint="Filter Orders"
                 android:inputType="textPersonName"
@@ -390,12 +390,14 @@
 
             <ImageView
                 android:id="@+id/admin_cart_filter_icon"
-                android:layout_width="30dp"
-                android:layout_height="32dp"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="100dp"
+                android:layout_width="23dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="88dp"
+                android:layout_marginEnd="24dp"
                 android:src="@drawable/user_icon_filter"
                 android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/user_search_products"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -403,9 +405,9 @@
                 android:id="@+id/admin_cart_search_icon"
                 android:layout_width="30dp"
                 android:layout_height="32dp"
-                android:layout_marginStart="43dp"
-                android:layout_marginEnd="34dp"
-                android:layout_marginBottom="18dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginEnd="64dp"
+                android:layout_marginBottom="37dp"
                 android:src="@drawable/ic_user_serch_icon1"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/cart_details2"

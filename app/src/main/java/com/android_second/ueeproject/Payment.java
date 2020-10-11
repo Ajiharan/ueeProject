@@ -10,6 +10,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -48,6 +49,16 @@ public class Payment extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(Payment.this, AddCardDetail.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView back = findViewById(R.id.img_arrow);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(Payment.this, CartActivity.class);
                 startActivity(intent);
             }
         });
