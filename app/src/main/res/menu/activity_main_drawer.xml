@@ -9,6 +9,10 @@
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_home" />
         <item
+            android:id="@+id/nav_prof"
+            android:icon="@drawable/nav_profile"
+            android:title="Account" />
+        <item
             android:id="@+id/fragmentFaq"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/faq" />
@@ -20,6 +24,16 @@
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_slideshow" />
+
+        <item
+            android:id="@+id/nav_promo"
+            android:icon="@drawable/nav_promo"
+            android:title="Promotions"/>
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Log Out"/>
 
 
     <item android:title="Others">

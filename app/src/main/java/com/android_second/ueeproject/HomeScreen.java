@@ -47,7 +47,7 @@ public class HomeScreen extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_gallery, R.id.nav_home,  R.id.nav_slideshow,R.id.sendFragment,R.id.shareFragment,R.id.fragmentFaq)
+                R.id.nav_gallery, R.id.nav_home, R.id.nav_prof, R.id.nav_slideshow,R.id.sendFragment,R.id.shareFragment,R.id.fragmentFaq)
                 .setDrawerLayout(drawer)
                 .build();
         admin_cart_icons=findViewById(R.id.admin_cart_icons);

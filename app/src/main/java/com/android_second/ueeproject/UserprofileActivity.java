@@ -32,6 +32,14 @@ public class UserprofileActivity extends AppCompatActivity {
         ImageView edit_add = findViewById(R.id.editsdd);
         ImageView delete_add = findViewById(R.id.deleteadd);
         ImageView cart = findViewById(R.id.cartprof);
+        ImageView back = findViewById(R.id.img_arrow1);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                back();
+            }
+        });
 
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -194,6 +202,10 @@ public class UserprofileActivity extends AppCompatActivity {
     public void OpenCartActivity(){
         Intent cart = new Intent(this, CartActivity.class);
         startActivity(cart);
+    }
+    public void back(){
+        Intent back_home = new Intent(this, HomeScreen.class);
+        startActivity(back_home);
     }
 
 }

@@ -10,6 +10,11 @@
         android:name="com.android_second.ueeproject.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
+    <activity
+        android:id="@+id/nav_prof"
+        android:name="com.android_second.ueeproject.UserprofileActivity"
+        android:label="User Profile"
+        tools:layout="@layout/activity_userprofile2"/>
 
     <fragment
         android:id="@+id/nav_gallery"
@@ -23,6 +28,16 @@
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
 
+    <activity
+        android:id="@+id/nav_promo"
+        android:name="com.android_second.ueeproject.PromotionsActivity"
+        android:label="Promotions"
+        tools:layout="@layout/activity_promotions"/>
+
+    <activity
+        android:id="@+id/nav_logout"
+        android:name="com.android_second.ueeproject.StartActivity"
+        tools:layout="@layout/activity_start2"/>
     <fragment
         android:id="@+id/sendFragment"
         android:name="com.android_second.ueeproject.ui.send.SendFragment"

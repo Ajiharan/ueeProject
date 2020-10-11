@@ -2,7 +2,9 @@ package com.android_second.ueeproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
@@ -14,6 +16,15 @@ public class PromotionsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_promotions);
+
+        ImageView back = findViewById(R.id.backhomearrow);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                back_home();
+            }
+        });
 
         int images[] = {R.drawable.slide1, R.drawable.slide2, R.drawable.slide3, R.drawable.slide4,R.drawable.slide5};
 
@@ -37,5 +48,10 @@ public class PromotionsActivity extends AppCompatActivity {
         View_Flipper.setInAnimation(this, android.R.anim.slide_in_left);
         View_Flipper.setOutAnimation(this, android.R.anim.slide_out_right);
 
+    }
+
+    public void back_home(){
+        Intent back_home = new Intent(this, HomeScreen.class);
+        startActivity(back_home);
     }
 }
