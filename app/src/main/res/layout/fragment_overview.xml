@@ -59,18 +59,18 @@
                         android:layout_marginStart="75dp"
                         android:textSize="14sp"
                         />
-                    <RatingBar
-                        android:layout_width="wrap_content"
+                    <android.widget.RatingBar
+                        android:layout_width="240dp"
                         android:layout_marginTop="1dp"
                         android:layout_height="wrap_content"
                         android:rating="4"
-                        android:layout_marginVertical="0dp"
-                        android:layout_marginHorizontal="0dp"
+                        android:numStars="5"
+                        android:max="5"
                         android:scaleX="0.4"
                         android:scaleY="0.4"
                         android:progressTint="@android:color/holo_orange_dark"
                         android:progressBackgroundTint="@android:color/holo_orange_dark"
-                        android:stepSize="0.4"
+
                       />
                 </LinearLayout>
                 <LinearLayout
