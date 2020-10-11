@@ -9,13 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewOrders"></activity>
-        <activity android:name=".AddCardDetail"></activity>
-        <activity android:name=".AddressChange"></activity>
-        <activity android:name=".View_Notification"></activity>
-        <activity android:name=".OrderedProductList" />
-        <activity android:name=".Payment" />
+
         <activity android:name=".CartActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".UserprofileActivity"/>
+        <activity android:name=".PromotionsActivity"/>
         <activity
             android:name=".ViewProduct"
             android:parentActivityName=".HomeScreen" />
@@ -23,7 +22,7 @@
             android:name=".HomeScreen"
             android:label="@string/title_activity_home_screen"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
