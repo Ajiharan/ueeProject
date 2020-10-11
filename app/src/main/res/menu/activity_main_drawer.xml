@@ -13,10 +13,6 @@
             android:icon="@drawable/nav_accounts_icon"
             android:title="Account" />
         <item
-            android:id="@+id/nav_orders"
-            android:icon="@drawable/user_orders"
-            android:title="My Orders" />
-        <item
             android:id="@+id/fragmentFaq"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/faq" />

@@ -1,6 +1,7 @@
 package com.android_second.ueeproject.ui.home;
 
 import android.content.Intent;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,11 +25,20 @@ public class HomeFragment extends Fragment {
     private HomeViewModel homeViewModel;
     private ViewFlipper imgBanner;
     private CardView cart_click;
+    private TextView txt_offerprice,txt_offerprice2,txt_offerprice3;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =
                 ViewModelProviders.of(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
+        txt_offerprice=root.findViewById(R.id.txt_offerprice);
+        txt_offerprice2=root.findViewById(R.id.txt_offerprice2);
+        txt_offerprice3=root.findViewById(R.id.txt_offerprice3);
+
+        txt_offerprice.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG);
+        txt_offerprice2.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG);
+        txt_offerprice3.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG);
+
         imgBanner=root.findViewById(R.id.select_product_image);
         cart_click=root.findViewById(R.id.cart_click);
 
