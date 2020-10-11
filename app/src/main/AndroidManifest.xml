@@ -10,7 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <activity android:name=".ViewOrders"/>
+        <activity android:name=".AddCardDetail"/>
+        <activity android:name=".AddressChange"/>
+        <activity android:name=".View_Notification"/>
+        <activity android:name=".OrderedProductList" />
+        <activity android:name=".Payment" />
         <activity android:name=".CartActivity" />
+
+
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".UserprofileActivity"/>
