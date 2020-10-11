@@ -340,6 +340,7 @@
                             </LinearLayout>
 
                             <RadioButton
+                                android:id="@+id/radio_btn_card"
                                 android:layout_width="151dp"
                                 android:layout_height="19dp"
                                 android:text="Add Card" />
