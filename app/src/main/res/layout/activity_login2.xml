@@ -59,7 +59,7 @@
         android:layout_width="215dp"
         android:layout_height="37dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/username"
@@ -76,7 +76,7 @@
         android:layout_width="0dp"
         android:layout_height="56dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="84dp"
         android:layout_marginEnd="32dp"
         android:autofillHints=""
         android:background="@drawable/round_bordered"
@@ -97,7 +97,7 @@
         android:layout_width="270dp"
         android:layout_height="37dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="156dp"
         android:layout_marginEnd="32dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/password"
@@ -114,12 +114,12 @@
         android:layout_width="0dp"
         android:layout_height="56dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="169dp"
+        android:layout_marginTop="212dp"
         android:layout_marginEnd="32dp"
         android:autofillHints=""
         android:background="@drawable/round_bordered"
         android:drawableStart="@drawable/password"
-        android:drawableEnd="@drawable/visible"
+
         android:drawablePadding="16dp"
         android:ems="10"
         android:hint="@string/enter_password"
@@ -133,8 +133,8 @@
 
     <Button
         android:id="@+id/login"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="249dp"
+        android:layout_height="56dp"
         android:layout_marginStart="45dp"
         android:layout_marginEnd="45dp"
         android:background="@drawable/round_bg"
@@ -145,10 +145,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2"
-        app:layout_constraintVertical_bias="0.513" />
+        app:layout_constraintVertical_bias="0.612" />
 
     <Button
         android:id="@+id/skiplogin"
@@ -179,10 +178,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/forgetpassword"
-        app:layout_constraintHorizontal_bias="0.725"
+        app:layout_constraintHorizontal_bias="0.647"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login"
-        app:layout_constraintVertical_bias="0.073" />
+        app:layout_constraintVertical_bias="0.082" />
 
     <TextView
         android:id="@+id/forgetpassword"
@@ -194,10 +193,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.757"
+        app:layout_constraintHorizontal_bias="0.775"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login"
-        app:layout_constraintVertical_bias="0.073" />
+        app:layout_constraintVertical_bias="0.082" />
 
     <TextView
         android:id="@+id/or"
@@ -210,9 +209,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login"
-        app:layout_constraintVertical_bias="0.35" />
+        app:layout_constraintVertical_bias="0.262" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -245,14 +245,29 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="76dp"
-        android:layout_height="67dp"
+        android:layout_width="80dp"
+        android:layout_height="78dp"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/person" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="141dp"
+        android:layout_height="29dp"
+        android:text="Show Password"
+        android:textColor="@color/colorPrimary"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_password"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

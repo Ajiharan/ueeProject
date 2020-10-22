@@ -91,7 +91,7 @@
         android:typeface="normal"
         app:layout_constraintBottom_toTopOf="@+id/enterusername"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view"
         app:layout_constraintVertical_bias="1.0" />
@@ -118,7 +118,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.091" />
+        app:layout_constraintVertical_bias="0.214" />
 
     <TextView
         android:id="@+id/textView5"
@@ -162,7 +162,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.128" />
+        app:layout_constraintVertical_bias="0.284" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -173,7 +173,7 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/round_bordered"
         android:drawableStart="@drawable/password"
-        android:drawableEnd="@drawable/visible"
+
         android:drawablePadding="16dp"
         android:ems="10"
         android:hint="Enter Password"
@@ -186,7 +186,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.206" />
+        app:layout_constraintVertical_bias="0.387" />
 
     <TextView
         android:id="@+id/textView7"
@@ -215,11 +215,11 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/round_bordered"
         android:drawableStart="@drawable/password"
-        android:drawableEnd="@drawable/visible"
+
         android:drawablePadding="16dp"
         android:ems="10"
         android:hint="Confirm Password"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:padding="16dp"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -228,7 +228,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.703" />
+        app:layout_constraintVertical_bias="0.678" />
 
     <Button
         android:id="@+id/register_user"
@@ -311,8 +311,8 @@
 
     <ImageView
         android:id="@+id/imageView10"
-        android:layout_width="78dp"
-        android:layout_height="75dp"
+        android:layout_width="122dp"
+        android:layout_height="113dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.465"
@@ -320,5 +320,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.129"
         app:srcCompat="@drawable/person" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="172dp"
+        android:layout_height="27dp"
+        android:text="Show Password"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/register_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+        app:layout_constraintVertical_bias="0.416" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
