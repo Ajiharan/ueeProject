@@ -10,6 +10,7 @@
     <color name="color_admin_customer_view">#f0f5f5</color>
     <color name="green">#32CD32</color>
     <color name="grey">#BFAFAF</color>
+    <color name="black">#000000</color>
     <color name="brown">#B22222</color>
     <color name="pink">#FFC0CB</color>
     <color name="colorList">#FFFAF0</color>

@@ -50,25 +50,26 @@
             android:layout_width="112dp"
             android:layout_height="40dp"
             android:layout_marginBottom="20dp"
-            android:backgroundTint="@android:color/holo_red_dark"
+            android:backgroundTint="#ff5050"
             android:text="NO"
+            android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.219"
-            app:layout_constraintStart_toStartOf="parent"
 
-            app:layout_constraintVertical_bias="0.908" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/delyes"
             android:layout_width="112dp"
             android:layout_height="40dp"
-            android:backgroundTint="#0b701a"
+            android:backgroundTint="#48B9Ac"
             android:text="YES"
+            android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.257"
 
+            app:layout_constraintHorizontal_bias="0.257"
             app:layout_constraintStart_toEndOf="@+id/delno"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.714" />
