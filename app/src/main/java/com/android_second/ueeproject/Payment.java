@@ -69,9 +69,19 @@ public class Payment extends AppCompatActivity {
 
         layout = findViewById(R.id.main_payment_products);
 
-        ImageView delete = findViewById(R.id.delete1);
-        delete.setOnClickListener((view) ->{
-            deleteLayout(view);
+        ImageView delete1 = findViewById(R.id.delete1);
+        delete1.setOnClickListener((view) ->{
+            deleteLayout1(view);
+        });
+
+        ImageView delete2 = findViewById(R.id.delete2);
+        delete2.setOnClickListener((view) ->{
+            deleteLayout2(view);
+        });
+
+        ImageView delete3 = findViewById(R.id.delete3);
+        delete3.setOnClickListener((view) ->{
+            deleteLayout3(view);
         });
     }
 
@@ -99,8 +109,20 @@ public class Payment extends AppCompatActivity {
         dialog.show();
     }
 
-    public void deleteLayout(View view) {
+    public void deleteLayout1(View view) {
         final CardView temp = (CardView) layout.findViewById(R.id.cardView1);
+        temp.removeAllViews();
+        layout.removeView(temp);
+    }
+
+    public void deleteLayout2(View view) {
+        final CardView temp = (CardView) layout.findViewById(R.id.cardView2);
+        temp.removeAllViews();
+        layout.removeView(temp);
+    }
+
+    public void deleteLayout3(View view) {
+        final CardView temp = (CardView) layout.findViewById(R.id.cardView3);
         temp.removeAllViews();
         layout.removeView(temp);
     }

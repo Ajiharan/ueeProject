@@ -158,6 +158,7 @@
                                 android:orientation="vertical">
 
                                 <TextView
+                                    android:id="@+id/amount1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="15dp"
@@ -165,11 +166,12 @@
                                     android:text="LKR 8500.00" />
 
                                 <TextView
+                                    android:id="@+id/shipping1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="15dp"
                                     android:layout_marginTop="1dp"
-                                    android:text="Shipping -> 25.08LKR"
+                                    android:text="Shipping -> 1200LKR"
                                     android:textStyle="italic" />
 
                             </LinearLayout>
@@ -284,7 +286,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="15dp"
                                     android:layout_marginTop="3dp"
-                                    android:text="Shipping -> 25.08LKR"
+                                    android:text="Shipping -> 500.98LKR"
                                     android:textStyle="italic" />
 
                             </LinearLayout>
@@ -339,21 +341,23 @@
                             android:orientation="vertical">
 
                             <TextView
+                                android:id="@+id/total_shipping_txt"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="55dp"
                                 android:layout_marginTop="5dp"
-                                android:text="Total shipping : "
+                                android:text="Total shipping : 1,726.06LKR"
                                 android:textColor="@color/brown"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
+                                android:id="@+id/total_amount_txt"
                                 android:layout_width="261dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="55dp"
                                 android:layout_marginTop="10dp"
-                                android:text="Total amount to pay : "
+                                android:text="Total amount to pay : 26,200.00LKR"
                                 android:textColor="@color/brown"
                                 android:textSize="16sp"
                                 android:textStyle="bold" />
@@ -366,9 +370,9 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintLayout2"
                 android:layout_width="386dp"
-                android:layout_height="76dp"
+                android:layout_height="110dp"
                 android:layout_marginStart="14dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="12dp"
                 android:layout_marginEnd="21dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -377,7 +381,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cart_details3"
                     android:layout_width="match_parent"
-                    android:layout_height="70dp"
+                    android:layout_height="match_parent"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="10dp"
@@ -402,7 +406,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="69dp"
+                        android:layout_height="match_parent"
                         android:layout_marginStart="90dp">
 
                         <RadioGroup
@@ -410,10 +414,16 @@
                             android:layout_height="match_parent">
 
                             <RadioButton
+                                android:id="@+id/radioButtonPaypal"
+                                android:layout_width="264dp"
+                                android:layout_height="31dp"
+                                android:text="Pay pal" />
+
+                            <RadioButton
                                 android:id="@+id/radioButtonCard"
                                 android:layout_width="264dp"
                                 android:layout_height="31dp"
-                                android:text="Add Card" />
+                                android:text="Stripe" />
 
                             <RadioButton
                                 android:id="@+id/radioButtoncod"
@@ -428,17 +438,17 @@
             <android.widget.Button
                 android:id="@+id/place_order_btn"
                 style="@style/CardView"
-                android:layout_width="154dp"
-                android:layout_height="45dp"
+                android:layout_width="206dp"
+                android:layout_height="44dp"
                 android:layout_marginStart="147dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="152dp"
                 android:background="@color/colorAccent"
                 android:text="Place Order"
                 android:textAllCaps="true"
                 android:textColor="@android:color/white"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.448"
+                app:layout_constraintHorizontal_bias="0.452"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
 

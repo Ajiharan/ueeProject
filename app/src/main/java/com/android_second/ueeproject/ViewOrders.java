@@ -78,7 +78,7 @@ public class ViewOrders extends AppCompatActivity {
 
         ImageView delete_Selected =  findViewById(R.id.admin_cart_icons);
         delete_Selected.setOnClickListener((view) ->{
-            if(c3.isChecked() && c4.isChecked() && c5.isChecked()){
+            if(c3.isChecked() || c4.isChecked() || c5.isChecked()){
                 deleteSelected(view);
             }
         });
