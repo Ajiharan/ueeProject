@@ -1,18 +1,21 @@
 package com.android_second.ueeproject;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.app.Dialog;
 import android.app.Notification;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 public class Payment extends AppCompatActivity {
@@ -20,6 +23,7 @@ public class Payment extends AppCompatActivity {
     private Button btnChange;
     private RadioButton btnCard;
     private Button order_place;
+    private LinearLayout layout;
 
     Dialog dialog;
 
@@ -30,7 +34,7 @@ public class Payment extends AppCompatActivity {
 
         dialog = new Dialog(this);
 
-        order_place = findViewById(R.id.button_place_order);
+        order_place = findViewById(R.id.place_order_btn);
         order_place.setOnClickListener((view) ->{
             OrderConfirmation();
         });
@@ -44,7 +48,7 @@ public class Payment extends AppCompatActivity {
             }
         });
 
-        btnCard  = findViewById(R.id.radio_btn_card);
+        btnCard  = findViewById(R.id.radioButtonCard);
         btnCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -61,6 +65,13 @@ public class Payment extends AppCompatActivity {
                 Intent intent=new Intent(Payment.this, CartActivity.class);
                 startActivity(intent);
             }
+        });
+
+        layout = findViewById(R.id.main_payment_products);
+
+        ImageView delete = findViewById(R.id.delete1);
+        delete.setOnClickListener((view) ->{
+            deleteLayout(view);
         });
     }
 
@@ -86,5 +97,11 @@ public class Payment extends AppCompatActivity {
         });
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialog.show();
+    }
+
+    public void deleteLayout(View view) {
+        final CardView temp = (CardView) layout.findViewById(R.id.cardView1);
+        temp.removeAllViews();
+        layout.removeView(temp);
     }
 }
