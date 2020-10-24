@@ -7,15 +7,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class ViewOrders extends AppCompatActivity {
 
     LinearLayout layout1 ;
-    private int count;
     private LinearLayout ll;
-    private final int numClass = 1;
+
     private Button remove1;
     private Button remove2;
     private Button remove3;
@@ -23,7 +23,12 @@ public class ViewOrders extends AppCompatActivity {
     private Button remove5;
     private Button remove6;
 
-
+    private CheckBox c1;
+    private CheckBox c2;
+    private CheckBox c3;
+    private CheckBox c4;
+    private CheckBox c5;
+    private CheckBox c6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +68,20 @@ public class ViewOrders extends AppCompatActivity {
         remove6.setOnClickListener((view) ->{
             deleteLayout6(view);
         });
+
+        c1 = findViewById(R.id.checkBox1);
+        c2 = findViewById(R.id.checkBox2);
+        c3 = findViewById(R.id.checkBox3);
+        c4 = findViewById(R.id.checkBox4);
+        c5 = findViewById(R.id.checkBox5);
+        c6 = findViewById(R.id.checkBox6);
+
+        ImageView delete_Selected =  findViewById(R.id.admin_cart_icons);
+        delete_Selected.setOnClickListener((view) ->{
+            if(c3.isChecked() && c4.isChecked() && c5.isChecked()){
+                deleteSelected(view);
+            }
+        });
         ImageView back = findViewById(R.id.img_arrow);
 
         back.setOnClickListener(new View.OnClickListener() {
@@ -100,5 +119,19 @@ public class ViewOrders extends AppCompatActivity {
             final CardView temp = (CardView) ll.findViewById(R.id.card_order6);
             temp.removeAllViews();
             ll.removeView(temp);
+    }
+
+    public void deleteSelected(View view){
+        final CardView temp3 = (CardView) ll.findViewById(R.id.card_order3);
+        temp3.removeAllViews();
+        ll.removeView(temp3);
+
+        final CardView temp4 = (CardView) ll.findViewById(R.id.card_order4);
+        temp4.removeAllViews();
+        ll.removeView(temp4);
+
+        final CardView temp5 = (CardView) ll.findViewById(R.id.card_order5);
+        temp5.removeAllViews();
+        ll.removeView(temp5);
     }
 }
