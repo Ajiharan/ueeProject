@@ -80,13 +80,10 @@
         android:layout_marginTop="50dp">
 
         <ScrollView
-            android:id="@+id/card_order_scroll"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_myReview">
+            android:layout_width="415dp"
+            android:layout_height="727dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
 
             <LinearLayout
                 android:id="@+id/main_linear_layout"
@@ -114,6 +111,7 @@
                         android:orientation="horizontal">
 
                         <CheckBox
+                            android:id="@+id/checkBox1"
                             android:layout_width="31dp"
                             android:layout_height="21dp"
                             android:layout_marginStart="5dp"
@@ -183,6 +181,7 @@
                         android:orientation="horizontal">
 
                         <CheckBox
+                            android:id="@+id/checkBox2"
                             android:layout_width="31dp"
                             android:layout_height="21dp"
                             android:layout_marginStart="5dp"
@@ -252,6 +251,7 @@
                         android:orientation="horizontal">
 
                         <CheckBox
+                            android:id="@+id/checkBox3"
                             android:layout_width="31dp"
                             android:layout_height="21dp"
                             android:layout_marginStart="5dp"
@@ -321,6 +321,7 @@
                         android:orientation="horizontal">
 
                         <CheckBox
+                            android:id="@+id/checkBox4"
                             android:layout_width="31dp"
                             android:layout_height="21dp"
                             android:layout_marginStart="5dp"
@@ -390,6 +391,7 @@
                         android:orientation="horizontal">
 
                         <CheckBox
+                            android:id="@+id/checkBox5"
                             android:layout_width="31dp"
                             android:layout_height="21dp"
                             android:layout_marginStart="5dp"
@@ -459,6 +461,7 @@
                         android:orientation="horizontal">
 
                         <CheckBox
+                            android:id="@+id/checkBox6"
                             android:layout_width="31dp"
                             android:layout_height="21dp"
                             android:layout_marginStart="5dp"
